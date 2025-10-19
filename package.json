@@ -1,0 +1,11 @@
+{
+    "name": "dev.mgrand.shared-variables",
+    "displayName": "Shared Variables",
+    "version": "0.1.0",
+    "description": "Allows components to share data without tight coupling.",
+    "unity": "6000.0",
+    "author": {
+        "name": "Michael Grand",
+        "url": "https://github.com/mgranddev"
+    }
+}
