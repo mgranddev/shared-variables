@@ -9,8 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added dependency on `com.kylewbanks.scenerefattribute`.
-- Added `CHANGELOG.md`.
+- Dependency on `com.kylewbanks.scenerefattribute`.
+- `CHANGELOG.md`.
+- `README.md`.
 
 ## [0.1.0] - 2025-10-19
 
