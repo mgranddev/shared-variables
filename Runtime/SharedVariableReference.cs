@@ -1,28 +1,40 @@
 using System;
+#if ODIN_INSPECTOR
 using Sirenix.OdinInspector;
+#endif
 using UnityEngine;
 
 namespace MGrand.SharedVariables
 {
     [Serializable]
+#if ODIN_INSPECTOR
     [InlineProperty]
     public abstract class SharedVariableReference<TValue, TVariable> : ISelfValidator where TVariable : SharedVariable<TValue>
+#else
+    public abstract class SharedVariableReference<TValue, TVariable> where TVariable : SharedVariable<TValue>
+#endif
     {
         [SerializeField]
+#if ODIN_INSPECTOR
         [HideLabel]
         [HorizontalGroup(Width = 70)]
+#endif
         private ValueSource source;
 
         [SerializeField]
+#if ODIN_INSPECTOR
         [HideIf("@source != ValueSource.Local", false)]
         [HideLabel]
         [HorizontalGroup]
+#endif
         private TValue value;
 
         [SerializeField]
+#if ODIN_INSPECTOR
         [HideIf("@source != ValueSource.Shared", false)]
         [HideLabel]
         [HorizontalGroup]
+#endif
         private TVariable variable;
 
         public TValue Value
@@ -52,9 +64,11 @@ namespace MGrand.SharedVariables
             }
         }
 
+#if ODIN_INSPECTOR
         public void Validate(SelfValidationResult result)
         {
             if (source == ValueSource.Shared && variable == null) result.AddError("Variable is required.");
         }
+#endif
     }
 }
