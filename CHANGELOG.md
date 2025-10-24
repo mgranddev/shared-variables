@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Renamed the create asset menu folder to "Shared Variables".
 - Odin Inspector is now optional.
+- On `SharedVariableReference`, renamed `value` to `localVariable`.
+- On `SharedVariableReference`, renamed `variable` to `sharedVariable`.
 
 ## [0.1.0] - 2025-10-19
 

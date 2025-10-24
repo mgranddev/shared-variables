@@ -27,7 +27,7 @@ namespace MGrand.SharedVariables
         [HideLabel]
         [HorizontalGroup]
 #endif
-        private TValue value;
+        private TValue localVariable;
 
         [SerializeField]
 #if ODIN_INSPECTOR
@@ -35,7 +35,7 @@ namespace MGrand.SharedVariables
         [HideLabel]
         [HorizontalGroup]
 #endif
-        private TVariable variable;
+        private TVariable sharedVariable;
 
         public TValue Value
         {
@@ -43,8 +43,8 @@ namespace MGrand.SharedVariables
             {
                 return source switch
                 {
-                    ValueSource.Local => value,
-                    ValueSource.Shared => variable.Value,
+                    ValueSource.Local => localVariable,
+                    ValueSource.Shared => sharedVariable.Value,
                     _ => throw new ArgumentOutOfRangeException()
                 };
             }
@@ -53,10 +53,10 @@ namespace MGrand.SharedVariables
                 switch (source)
                 {
                     case ValueSource.Local:
-                        this.value = value;
+                        localVariable = value;
                         break;
                     case ValueSource.Shared:
-                        variable.Value = value;
+                        sharedVariable.Value = value;
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
@@ -67,7 +67,7 @@ namespace MGrand.SharedVariables
 #if ODIN_INSPECTOR
         public void Validate(SelfValidationResult result)
         {
-            if (source == ValueSource.Shared && variable == null) result.AddError("Variable is required.");
+            if (source == ValueSource.Shared && sharedVariable == null) result.AddError("Shared Variable is required.");
         }
 #endif
     }
