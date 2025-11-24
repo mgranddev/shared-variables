@@ -6,6 +6,7 @@
     "unity": "6000.0",
     "author": {
         "name": "Michael Grand",
+        "email": "michael@mgrand.dev",
         "url": "https://github.com/mgranddev"
     },
     "dependencies": {
