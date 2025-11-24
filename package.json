@@ -9,6 +9,13 @@
         "email": "michael@mgrand.dev",
         "url": "https://github.com/mgranddev"
     },
+    "keywords": [
+        "unity",
+        "architecture",
+        "variables",
+        "scriptableobject",
+        "decoupling"
+    ],
     "dependencies": {
         "com.kylewbanks.scenerefattribute": "0.13.0"
     },
