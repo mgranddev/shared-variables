@@ -18,5 +18,15 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mgranddev/shared-variables.git"
-    }
+    },
+    "files": [
+        "CHANGELOG.md",
+        "CHANGELOG.md.meta",
+        "package.json",
+        "package.json.meta",
+        "README.md",
+        "README.md.meta",
+        "Runtime",
+        "Runtime.meta"
+    ]
 }
