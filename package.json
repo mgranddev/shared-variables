@@ -11,5 +11,8 @@
     },
     "dependencies": {
         "com.kylewbanks.scenerefattribute": "0.13.0"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@mgranddev"
     }
 }
