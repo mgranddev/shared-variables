@@ -3,6 +3,12 @@ name: Node.js Package
 on:
   release:
     types: [created]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'The release tag to publish'
+        required: true
+        type: string
 
 jobs:
   publish-gpr:
@@ -13,6 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
+          ref: ${{ inputs.release_tag || github.ref }}
           persist-credentials: false
       - uses: actions/setup-node@v6
         with:
