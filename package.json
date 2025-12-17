@@ -1,39 +1,39 @@
 {
-    "name": "dev.mgrand.shared-variables",
-    "displayName": "Shared Variables",
-    "version": "0.3.0",
-    "description": "Allows components to share data without tight coupling.",
-    "unity": "6000.0",
-    "author": {
-        "name": "Michael Grand",
-        "email": "michael@mgrand.dev",
-        "url": "https://github.com/mgranddev"
-    },
-    "keywords": [
-        "unity",
-        "architecture",
-        "variables",
-        "scriptableobject",
-        "decoupling"
-    ],
-    "dependencies": {
-        "com.kylewbanks.scenerefattribute": "0.13.0"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@mgranddev"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mgranddev/shared-variables.git"
-    },
-    "files": [
-        "CHANGELOG.md",
-        "CHANGELOG.md.meta",
-        "package.json",
-        "package.json.meta",
-        "README.md",
-        "README.md.meta",
-        "Runtime",
-        "Runtime.meta"
-    ]
+  "name": "dev.mgrand.shared-variables",
+  "displayName": "Shared Variables",
+  "version": "0.3.0",
+  "description": "Allows components to share data without tight coupling.",
+  "unity": "6000.0",
+  "author": {
+    "name": "Michael Grand",
+    "email": "michael@mgrand.dev",
+    "url": "https://github.com/mgranddev"
+  },
+  "keywords": [
+    "unity",
+    "architecture",
+    "variables",
+    "scriptableobject",
+    "decoupling"
+  ],
+  "dependencies": {
+    "com.kylewbanks.scenerefattribute": "0.13.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@mgranddev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgranddev/shared-variables.git"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "CHANGELOG.md.meta",
+    "package.json",
+    "package.json.meta",
+    "README.md",
+    "README.md.meta",
+    "Runtime",
+    "Runtime.meta"
+  ]
 }
