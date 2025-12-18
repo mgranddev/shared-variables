@@ -23,8 +23,8 @@
     "registry": "https://npm.pkg.github.com/@mgranddev"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mgranddev/shared-variables.git"
+    "url": "git@github.com:mgranddev/shared-variables.git",
+    "type": "git"
   },
   "files": [
     "CHANGELOG.md",
