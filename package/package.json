@@ -17,7 +17,7 @@
     "decoupling"
   ],
   "dependencies": {
-    "com.kylewbanks.scenerefattribute": "0.13.0"
+    "dev.mgrand.scene-ref-attribute": "0.1.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@mgranddev"
